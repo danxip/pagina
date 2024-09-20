@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            color: white;
+        }
+        .container {
+            height: 100%;
+            background-image: url('fondo.gif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+        }
+        .content {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .image-container {
+            flex: 0 0 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circular-image {
+            width: 563px;
+            height: 456px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-image: url('1.jpg');
+            background-size: cover;
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+        }
+        .text-container {
+            flex: 0 0 60%;
+            padding-left: 50px;
+        }
+        h1 {
+            font-size: 5.5em;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        h2{
+            font-size: 2.8em;
+        }
+        hr{
+            border-bottom-width: 3px;
+            margin-right: 0px;
+            width: 259px;
+            margin-left: 0px;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            width: 228px;
+            padding: 10px 15px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin: 15px 0;
+            background-color: #ffffff;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+            text-decoration: none;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+
+        }
+        .button img {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        .create-account {
+            background-color: white;
+            border: 2px solid white;
+            color: black;
+    
+        }
+        .disclaimer {
+            font-size: 0.8em;
+            margin-top: 20px;
+            opacity: 0.7;
+            width: 290px;
+        }
+        .icono{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="image-container">
+                <div class="circular-image"></div>
+            </div>
+            <div class="text-container">
+                <h1><strong>Lo que ocurre en este momento.</strong> </h1>
+                <br>
+                <h2><strong>Unete</strong></h2>
+                <div>
+                    <a href="#" class="button">
+                        <img class="icono" src="facebook.png" alt="Facebook icon"> <strong>Regístrate con Facebook
+                    </a></strong>
+                    <a href="#" class="button">
+                        <img class="icono" src="google.png" alt="Google icon"> <strong>Regístrate con Google</strong>
+                    </a>
+                    <hr>
+                    <a href="#" class="button create-account"><strong>Crear Cuenta</strong></a>
+                </div>
+                <p class="disclaimer">Al registrarte, aceptas los <a href="">Términos de servicio</a> y la <a href="">Política de privacidad</a>, incluida la política de <a href="">Uso de cookies</a>.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
